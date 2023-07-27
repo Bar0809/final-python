@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout from git') {
             steps {
                 checkout([$class: 'GitSCM',
-                          branches: [[name: '*/master']],
+                          branches: [[name: '*/main']],
                           userRemoteConfigs: [[url: 'https://github.com/Bar0809/final-python']]])
             }
         }
